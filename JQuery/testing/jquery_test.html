@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script src="JQuery.min.js"></script>
+	</head>
+
+	<body>
+
+		<div>
+			<button> click me to hide all elements that uses class test</button>
+		<div>
+		<div>
+			<p class="test"> i use class test </p>
+			<h3 class="test"> i also use class test</h3>
+			<p> haha!! i don't !! </p>
+		</div>
+	</body>
+
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$(".test").hide();
+			});
+		});
+	</script>
+</html>
